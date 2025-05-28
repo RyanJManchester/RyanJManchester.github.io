@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Pharmacology</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Pharmacology"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Pharmacology"/><meta name="twitter:description" content="What is Pharmacology? Pharmacology is the study of how medicines interact with other molecules in the body and how they affect the body."/><meta property="og:description" content="What is Pharmacology? Pharmacology is the study of how medicines interact with other molecules in the body and how they affect the body."/><meta property="og:image:alt" content="What is Pharmacology? Pharmacology is the study of how medicines interact with other molecules in the body and how they affect the body."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Module-2/Pharmacology"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Module-2/Pharmacology"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="What is Pharmacology? Pharmacology is the study of how medicines interact with other molecules in the body and how they affect the body."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL21udC9jL1VzZXJzL3J5YW5qL0RvY3VtZW50cy9SeWFuSk1hbmNoZXN0ZXIuZ2l0aHViLmlvL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Module-2/Pharmacology-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Module-2/Pharmacology-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Module-2/Pharmacology-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Module-2/Pharmacology"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Module-2/">Module 2</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Pharmacology</a></div></nav><h1 class="article-title">Pharmacology</h1><p show-comma="true" class="content-meta"><time datetime="2025-05-25T01:04:02.000Z">May 25, 2025</time><span>16 min read</span></p></div></div><article class="popover-hint"><h3 id="what-is-pharmacology">What is Pharmacology?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-is-pharmacology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Pharmacology</em> is the study of how medicines interact with other molecules in the body and how they affect the body. Pharmacology can be divided into two:<br/>
+Pharmacokinetics and Pharmacodynamics.</p>
+<h2 id="terms-to-learn">Terms To Learn<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#terms-to-learn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Adverse Affect</strong></td><td>an <em>adverse</em> effect, also known as a sifde effect, is an undesired result caused by the administration of a medicine. Not all patients will experience adverse effects and when we want to consider administering a medication we need to consider is possible adverse affects are worth achieving the desired result of the medicine.</td></tr><tr><td>BioAvailability</td><td><strong>Bioavailability</strong> is the percentage of a medication that reaches the systemic circulation umetabolised for the body to use therapeutically. Medications given Intravaneously have a much higher bio-availability than those given orally. This is due to first-pass metabolism.</td></tr><tr><td>Duration of effect</td><td>The length / amount of time a medication remains above the minimum concentration levels.  <br/><em>(eg, Ondansetron duration of effect is 4 - 8 hrs).</em></td></tr><tr><td>Half - life</td><td>is the time take for the plasma concentration to fall by one half. Medicines with short half lives leave the body quickly, whereas medicines with long half-lives leave the body slowly.</td></tr><tr><td>Interaction</td><td><strong>Interaction</strong> can occur when the interaction of one medication alters the clinical effects of another. This may result in an increase or decrease in either beneficial or harmful effects of either Medication.</td></tr><tr><td>Mechanism of Action</td><td>Describes how the medication has it’s effect.  <br/>For example, Ondansetron, an antiemetic, blocks (antagonizes) serotonin receptors centrally in the brain and perpherally in the GI Tract, resulting in a reduction in nausea and vomiting.</td></tr><tr><td>(MEC): Minimum Effective Concentration</td><td>(MEC) the lowest concentration of the medicine required to achieve the therapeutic benefit.</td></tr><tr><td>(MTC) Maximum Therapeutic Concentration</td><td>Is the concentration at which a medicine produces unwanted adverse effects. It is also known as a minimum toxic concentration.</td></tr><tr><td>Onset of Effect</td><td>the length of time it takes for a medicine to become effective - and it is dependent on the route of administration.</td></tr><tr><td>Peak Concentration</td><td><strong>Peak concentration</strong> refers to peak plasma levels and is the highest level of medicine concentration in the blood. For example, pleak plasma concentration of Ondansetron following a 4mg intramuscular dose is attained after approximately 4 minutes.</td></tr><tr><td>PharmacoKinetics</td><td>Is what the body does to the medicine, and the is concerned with the MOI, where and how a medicine asserts its affects, and the associated body’s pharmalogical response.</td></tr><tr><td>Pharmacodynamics</td><td>Is what the medicine does to the body. Pharmacodynamics is concerned with how medicines enter the body and their movement through it until eliminated.</td></tr></tbody></table></div>
+<h2 id="expanding-on-our-terms-above">Expanding on our Terms Above<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#expanding-on-our-terms-above" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="multiple-dosing-why">Multiple Dosing, Why?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multiple-dosing-why" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>we dose multiple times to maintain a steady concentration of a medication to maintain optimum effectiveness, such as pain relief. for epilepsy, or chronic diseases.</p>
+<p>After the administration of a single dose, the medication concentration in the plasma rises above and then falls below the MEC - Minimum effective concentration, resulting in a decline in therapeutic effort. Multiple Doses are used to maintain a steady concentration of the medication, to achieve optimum affectiveness.</p>
+<h3 id="maximum-therapeutic-concentration">Maximum Therapeutic Concentration.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#maximum-therapeutic-concentration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Maximum therapeutic concentraition, also known as the minimum toxic concentration, is the concentration at which a medication starts producing unwanted adverse effects.</p>
+<p>Medicines with a short half-life leave the body quickly whereas medicines with long half-lives leave the body slowly.</p>
+<h3 id="onset-of-effect">Onset Of Effect<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#onset-of-effect" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Onset Of Effect:</strong> the length of time it takes for a medication to have effects on the body, and is dependent on the route of administration.</p>
+<h1 id="pharmacodynamics-vs">Pharmacodynamics vs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pharmacodynamics-vs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>is What medicine does to the body. It is concerned with the mechanism of action - where and how a medicine exerts its affects on the body, and the subequent body’s pharmlogical response.</p>
+<p><em><strong>what medicine does to the body, and how they do it</strong></em></p>
+<h1 id="pharmacokinetics">Pharmacokinetics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pharmacokinetics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Is what the body does to the medicine. Pharmacoknetics is concerned with how medicines enter the body and their movement through the body until eliminated.</p>
+<p><em><strong>what the body does to the medicine</strong></em></p>
+<p>it includes <strong>(A,B,C,D)</strong> - administration, bioavailability, clearance, and distribution</p>
+<h3 id="-why-is-pharmacokinetics-important">💡 Why is pharmacokinetics important?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-why-is-pharmacokinetics-important" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>By understanding pharmacokinetic principles, medicine therapy can be maximised to enhance benefits and Hamrm, through informed decisions.</p>
+<h2 id="factors-affecting-pharmacokinetics">Factors affecting pharmacokinetics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#factors-affecting-pharmacokinetics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Age: An elder person may have slower G.I Activity, and this can increase absorption</li>
+<li>Physiological Alterations to the body, such as increased adipose (fat) tissue, can affect distribution, and clearance of medicine of the body.</li>
+<li>Disease processes which affect liver and kidney functions - <em>the organs of medicine elimination</em> - are responsible for large variances in pharmacokinetics.</li>
+<li>Diminished vascular perfusion of one or more parts of the body is encountered in conditions such as cardiac failure. This diminished perfusion can affect the different pharmacokinetic mechanisms:
+<ul>
+<li>perfusion of the absorption site influence absorption</li>
+<li>variation of the liver and kidneys affects the metabolism and excretion of the medication</li>
+<li>variation of body perfusion may alter distribution to certain organs.</li>
+</ul>
+</li>
+<li>Body Size may alse affect liver and kidney function,, with obesity believed to increase clearance of medicines.</li>
+</ol>
+<h2 id="routes-of-administration---parental-vs-enteral">Routes Of Administration - Parental Vs Enteral<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#routes-of-administration---parental-vs-enteral" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="parental-routes---bypass-the-gi-tract">Parental Routes - bypass the GI Tract.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parental-routes---bypass-the-gi-tract" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th>Example of Medication given</th><th>Time for Route</th></tr></thead><tbody><tr><td>Intravenous</td><td></td><td></td></tr><tr><td>Intraosseous (into a bone)</td><td></td><td></td></tr><tr><td>Intramuscular</td><td></td><td></td></tr><tr><td>Subcutaneous  <br/>(under the skin)</td><td></td><td></td></tr><tr><td>Inhalation or Nebulised</td><td></td><td></td></tr><tr><td>Topical  <br/><strong>(local to site required)</strong></td><td></td><td></td></tr><tr><td>Intranasal</td><td></td><td></td></tr></tbody></table></div>
+<h2 id="enteral-routes---absorption-through-the-gi-tract">Enteral routes - absorption through the G.I Tract<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enteral-routes---absorption-through-the-gi-tract" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th>Example of Medication given</th><th>Time for Route</th></tr></thead><tbody><tr><td>Per Oral</td><td></td><td></td></tr><tr><td>Orogastic / nasogastric  <br/>via a tube inserted into the stimach via the mouth or nose.</td><td></td><td></td></tr><tr><td>Per Rectum  <br/>into the rectum</td><td></td><td></td></tr><tr><td>Buccal  <br/>(between gum and cheek)</td><td></td><td></td></tr><tr><td>Sublingual  <br/>(under the tongue)</td><td></td><td></td></tr></tbody></table></div>
+<h2 id="the-life-cycle-of-medicines-in-the-body">The life-cycle of medicines in the body<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-life-cycle-of-medicines-in-the-body" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="absorption">Absorption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#absorption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The passage of medicine from the site of administration into the bloodstream.For example, a medication adminstered per Oral (PO) is absorbed from the stomach and / or intestine into the portal (liver) circulation, and a medicine that is administered intramuscularly (IM) is absorbed from the muscle into the systemic circulation. Absorption occurs by active or passive transport.</p>
+<p><strong>The bodys environment into which the medicine is administered,</strong> along with the chemical composition of the medicine, work together to determine the rate and extent of medicine absorption. The rate of abosrption determins how soon the medicine will produce its effects and the amount of medicine absorption determines how intense the effects are.</p>
+<h2 id="factors-influencing-bioavailibility">Factors influencing BioAvailibility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#factors-influencing-bioavailibility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="blood-flow">Blood Flow<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#blood-flow" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The more blood flow to the tissue at the absorption site, the faster the medication is absorbed. Fir example, When a patient is shocked, The blood flow to the GastroIntestinal Tract is reduced, and therefore Oral Medication would be less effective. However, Absorption is not Required when a medicine is administered intravenously, as the medication directly enters the bloodstream</p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;graph TD\n  A[Pt is in Shock,\\n Less blood flow]\n  A -- less blood flow to GI Tract.--> B\n  A -- Normal access Intravenously --> C\n  B[Oral Medications Not as Effective]\n  C[Intravenous Medications Still Work The Same]&quot;">graph TD
+  A[Pt is in Shock,\n Less blood flow]
+  A -- less blood flow to GI Tract.--> B
+  A -- Normal access Intravenously --> C
+  B[Oral Medications Not as Effective]
+  C[Intravenous Medications Still Work The Same]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="surface-area-for-absorption">Surface Area for Absorption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#surface-area-for-absorption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The larger the surface area, the faster the absorption. For Example, a Patient who has had a section of their bowel surgically removed due to Chron’s Disease would have a slower rate of absorption than a Pt with an intact bowel due to decrease surface area.</p>
+<p>Shown Above: Villi, the finger line projections within the GI Tract that increase the surface area availble for absorption.</p>
+<h3 id="lipid-water-solubility">Lipid Water Solubility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lipid-water-solubility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Because Cell Membranes are lipiod (fat), The greater the lipid-solubility of a medication, The Faster the absorption.</p>
+<p>It is also easier for smaller molecules to penetrate and be absorbed by cell membranes than larger molecules.</p>
+<h3 id="ph-of-medications">PH of Medications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ph-of-medications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Most medications are either weak acids or weak bases. An Acid Medium is absorbed more easily in na acidic environment and vis versa, and Medium Alkaline medication is absorbed more easily in Alkaline Environments. For Example, Aspirin (Acetylsalicylic acid) is an acid based medication that abosrbs well in the stomach.</p>
+<h3 id="summary">Summary:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Blood Flow to the Area</li>
+<li>Surface Area available for Absorption</li>
+<li>Lipid-Solubility of the medicine</li>
+<li>PH of the medicine and the PH of the bosys’s internal environment</li>
+<li>Medicine Concentration</li>
+<li>Structures that the medication needs to pass through.</li>
+</ul>
+<h2 id="distribution-of-medication">Distribution of Medication<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribution-of-medication" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="distribution-of-medication-1">Distribution of Medication<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribution-of-medication-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>the moement of medications throughout the body, and occurs after absorption. Distribution is determined by Three Factors:</p>
+<ol>
+<li><strong>Blood FLow to the tissues.</strong></li>
+<li><strong>The ability of medicine to exit the circulatory system.</strong></li>
+<li><strong>The ability of the medication to enter cells, if required.</strong></li>
+</ol>
+<h3 id="a-medications-ability-to-exit-the-circulatory-system">A Medications Ability to Exit the circulatory System<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-medications-ability-to-exit-the-circulatory-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>After a medication has been delivered to the target tissue, the next step is to exit the circulatory system to produce the desired effect.<br/>
+Most medications do not evoke their effects within the blood, therefore the ability for the medication to be able to exit the circulatory system (the blood) is important.</p>
+<blockquote>
+<p>Lipid Soluble Medications have a high affinity for adipose (fat) tissue, but adipose tissue has a low blood flow therefore prolonging the time the medication remains in the body.</p>
+</blockquote>
+<p>Capillary Beds make up a single layer of epithelial Cells, which enable medication molecules to move easky and quickly pass through to the interstitial space and then into target cells.</p>
+<p>Many medicines are bound to proeteins within the body. Medicines can be bound to plasma proteins as well as tissue proteins. The degree of meidine to protein binding often effects the efficiency of the medication. Plasma protein binfing can have mulptiple effects on the pharmacokinetics of a medication. The binding of medication to plasma proteins is the main determinant of a medicaions disposition. When a medication is bound to plasma proteins it is not activel distributed to the site of action. Furthermore, the bound medication remains in the blood, while the unbound (free) portions may be metabolised or eliminated.<br/>
+<strong>Only Free or Unbound Medicines can intereact with receptors. therefore only free medicine molecules can produce our therapeutic affect.</strong></p>
+<p><em>Example: Warfarin is a highly protein bound medicine that must unbind from proteins to leave the blood. If a patient who takes Warfarin experiences a change in protein level, as a result of liver cirrhosis or malnutrition, the warfarin dose must be adjusted to take this into account.</em></p>
+<h3 id="ability-of-medicine-to-enter-the-cells">Ability of Medicine to enter the Cells<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ability-of-medicine-to-enter-the-cells" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Some medications must enter the cell to reach their site of action and most medicines must enter cells to undergo metabolism and elimination. This is affected by a transport system being in place and the lipid solubility of the medication.</p>
+<h3 id="passing-the-blood-brain-barrier">Passing The Blood Brain Barrier..<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#passing-the-blood-brain-barrier" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Only very lipid (dar?? can enter the brain</strong></p>
+<h2 id="metabolism">Metabolism<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metabolism" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>What is metabolism?</strong></p>
+<p>Metabolism involves enzymes. Most medications undergo chemical modification to create compounds, known as metabolites, that are easily eliminated from the body. Metabolites may be more or less active than the original medicne, and they can make the medicine more water-soluble to facilitate elimination. <strong>These chemical modifications occur primarily in the liver.</strong></p>
+<h3 id="first-pass-effect">First Pass Effect<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#first-pass-effect" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The First Pass effect is a process in which the liver can partially or completely inactivate a medication before it reaches the systemic circulation. For medicines adminstered Orally, Absorbe from the GI tract, and transported to the liver, Via the <strong>Hepatic Portal Vein,</strong> this may result in none or only a small portion of the active medicaiton reaching the systemic cicrulation and the intended target tissue or organ. This process can be protective, as it enables the liver to in-activate medications that are potentially harmful before they are distributed throughout the body.</p>
+<p>If it is a medicaiton that requires a therapeutic affect, Then this process can be bypassed by administering the medication parentarally.</p>
+<h2 id="factors-influencing-metabolism">Factors Influencing Metabolism<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#factors-influencing-metabolism" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="age">Age<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#age" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>In infancy, the liver is not fully developed, therefore the ability to metabolize is limited. INfants up to one yea if age are sensitive to some medicines.</p>
+<h3 id="nutrition">Nutrition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nutrition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Medicines metabolized by the liver require many cofactors to be able to metabolise effectively. If a patient is malnourished, these co-factors may be deficient, and metabolism will be compromised.</p>
+<h3 id="competition-between-medications">Competition between Medications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#competition-between-medications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>When tow medicines are metabolised by the same metabolic pathway, they tend to compet. This decrease the rate at which one or both medicines are being metaboliszed and can lead do medicine accumulation.</li>
+<li>For example, alcohol metabolism uses up a key component in the metabolism of paracetamol If too much alchohol has been ingested too close to paracetamol administration, paracetamol cannot be broken down via its normal mechanism. This can lead to toxic damage witihn the liver.</li>
+</ul>
+<h3 id="elimination">Elimination<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#elimination" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Elimination is the removal of medicine from the body. All medicines are eventually Elimanated. Medicines may be eliminated in the unchanged form or after being metabolised and effectively changed. They can be eleciminated in urine, bile, exhaled air, saliva, sweat, breast mil, or faeces. Most water-soluble medicines and their metabolites are eliminated by the kidneys in urine.</p>
+<ul>
+<li><strong>Saliva - Exhaled Air - Breast Milk - Sweat - Bile - Faeces - Urine</strong></li>
+</ul>
+<h3 id="disease-processes">Disease processes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#disease-processes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Disease Processes which affect liver and kidney function , the organs of medication elimination, are responsible for large variations in pharmacokinetics.</p>
+<h1 id="medicine-classifications">Medicine Classifications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#medicine-classifications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h3 id="ace-inhibitors"><strong>ACE Inhibitors</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ace-inhibitors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>medications that inhibit the activity of the angiotenzin converting enxyme, ACE, which causes blood vessels to dilate, resulting in lowered blood pressure. Examples of ACE Inhibitors <strong>include cilzapril, lisinopril, captopril, and quinapril</strong></p>
+<h3 id="alpha-and-beta---adrenergic-antagonists"><strong>Alpha And Beta - adrenergic antagonists</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alpha-and-beta---adrenergic-antagonists" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Are medications that stimulate both alpha and beta receptors causing dilaton of bronchioles and constriction of blood vessels. Adrenaline is an example of this medication.</p>
+<blockquote>
+<p>Remember, <strong>Alpha Receptors c</strong>ause Contriction, and <strong>Beta Receptors c</strong>ause Dilation</p>
+</blockquote>
+<h3 id="analagesics-include-nsaids-and-opoids"><strong>Analagesics Include NSAIDS And Opoids…</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analagesics-include-nsaids-and-opoids" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="nsaids--non-steroidal-anti-inflammatory-drugs">NSAIDS ( Non-steroidal anti-inflammatory Drugs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nsaids--non-steroidal-anti-inflammatory-drugs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>are a group of anti- inflammatory medicines that are used to relieve pain, such as Ibuprofen and diclofenac.</p>
+<h3 id="opoids">Opoids<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#opoids" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>such as Morphine and fentanyl, bind to opiate receptor sites in the brain and spinal cord. They block the transmission of pain messages to the brain therefore reducing the feeeling of pain.</p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;graph TD\n  A[1. Painful Stimuli] -- Spinal Cord Takes message to the brain --> B[Brain]&quot;">graph TD
+  A[1. Painful Stimuli] -- Spinal Cord Takes message to the brain --> B[Brain]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="angiotensin-2-blockers">AngioTensin 2 Blockers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#angiotensin-2-blockers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Angiotensin 2 Blockers are medicines which block the action of the hormone angiotensin 2, resulting in decreased blood pressure. Angion tensin 2 Blockers prevent angiotensin 2 from binding to its receptors on the muscles surroung blood vessels. This results in vasodilation which reduces blood pressure. These blockers have similar effects to those of ACE Inhibitors and are commonly used when a patient can not tolerate an ACE Inhibitor. Examples of AngioTensin 2 Blockers include candesarten and Losartan.</p>
+<h3 id="antibiotics">Antibiotics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#antibiotics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Used to treat bacterial infections, They Inhibit the growth of, or destroy, bacterial micro-organisms. They can be further classified..</p>
+<h3 id="penicillin-based">Penicillin Based<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#penicillin-based" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Penicillin based Medications, <strong>Such As amoxicillin</strong>, are beta-lactam antibiotics which have a broad activity against many bacteria. Many Bacteria are resistant to amoxicillin due to their ability to produce the enxyme beta-lactamaze, which destroys the active part of beta-lactam antibiotics. Co-amoxiclav contains amoxicillin and claculanic acid. The clavulanic acid inhibits the beta-lactamaze enzymēso that the amoxicillin can effectively kill the bacteria.</p>
+<h3 id="cephalosporions">Cephalosporions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cephalosporions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Cephalosporins are a class of beta-lactam antibiotics. They have a broad activity agains bacteria and are less susceptible to the enxyme beta-lactamze. Cephalosporions are used for patients that have a severe allergy to penicillin antibiotics. An example is <strong>Ceftriaxone.</strong></p>
+<h3 id="anti-coagulants">Anti-coagulants<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anti-coagulants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>medicines that interrupt the blood clotting process, and help prevent blood clots, such as Warfarin, and Heparin (Not Aspirin, which is an anti-platelet).</p>
+<h3 id="antiemetics">Antiemetics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#antiemetics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>medicines that are effective in the <strong>suppresssion</strong> of nausea and vomiting. <strong>Ondansetron</strong> is an anti-emetic.</p>
+<h3 id="antihistamines">Antihistamines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#antihistamines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>anatagonise (block) the action of histamine. Histamine is responsible for immediate hypersensitibity reactions such as itching and sneezing. Loratadine is an example of an antiHistamine.</p>
+<h3 id="antiplatelets">Antiplatelets<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#antiplatelets" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Antiplatelet Medicines</p>
+<h3 id="beta-blockers">Beta Blockers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#beta-blockers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>are medications that block the effect of beta-adregeneric substances. They Stopy the heart rate increasing and limit the force which which the heart contracts which in turn reduces blood pressure. Names of these medicines comomnly end in “lol”. Examples include Metroprolol, atenolol, bisoprolol, and sotalol.</p>
+<h3 id="bronchodilators">Bronchodilators.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bronchodilators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Cause dilation of the bronchioles. Examples of Bronchodilators are salbulatamol and Ipratropium. In the out- of hospital environment, bronchodilators are adminsitered for shortness of breath, caused by bronchospasm associated with asthma or COPD.</p>
+<h3 id="calcium-channel-blockers">Calcium Channel Blockers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#calcium-channel-blockers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Calciumc Channel blockers relax and dilate the blood vessels by affecting muscle cells in the arterial walls, resulting in decreased blood pressure. Also Known as calcium channel antagonists, They are commonly used as anti-hypertensive medications, although <strong>some classes of calcium channel blockers slow the heart rate,</strong> which enables use as treatment for angina and atrial fibriliation. <strong>Examples of Calcium channel blockers include diltiazem, verapimil, amlodipine, and felodipine</strong>.</p>
+<h3 id="corticosteroids">Corticosteroids<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corticosteroids" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Inihibit the production of inflammatory mediators, resulting in a reduction in inflammatory responses. Prednsione is a corticosteroid</p>
+<h3 id="diuretics">Diuretics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diuretics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Diuretics increase the amount of water and salt eliminated from the body as urine. They are commonly used to treat a range of conditions, such as hypertension, heart failure, and oedema. There are several classes of diuretic, but the individual classes are not important. Examples of diuretics include frusemide, bendrofluazide, and spironolactone.</p>
+<h3 id="oral-hypoglycaemics">Oral Hypoglycaemics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#oral-hypoglycaemics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Oral Hypoglycaemics reduce the amount of glucose in the bloodstream. There are different classifications of Oral Hypoglycaemics, and each classification works in a slightly different way to manage blood glucose levels. Some increase the amount of insulin created by the pancreas, some increase the sensitivity of taget organs to insulin, some reduce the production of glucose by the liver, and some decrease the rate that glucose is absorbed from the gastrointestinal tract. Examples of commonly found <strong>Oral hypgolycaemics include gliclazide, metformin, and glipizide.</strong></p>
+<h3 id="vasodilators">Vasodilators<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vasodilators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>cause dilation of the blood vessels, increasing blood flow. Vasodilators are used to treat hypertension, angina, and heart failure. <strong>An example of this medication is GTN.</strong></p>
+<h2 id="review-questions">Review Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#review-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="recap-questions">Recap Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recap-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>What is Osmosis?</li>
+<li>What is diffusion?</li>
+<li>What is active transport?</li>
+</ul>
+<h3 id="questions-about-pharmacology">Questions about Pharmacology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#questions-about-pharmacology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>What is the difference between pharmacokinetics and pharmacodynamics?</p>
+</li>
+<li>
+<p>Write out the Definitions we have learnt from this page.</p>
+</li>
+<li>
+<p>Why do we do multiple dosing?</p>
+</li>
+<li>
+<p>What are factors that influence biavailability?</p>
+</li>
+<li>
+<p>Distribution is determined by:</p>
+</li>
+<li>
+<p>What is the primary site of metabolism?</p>
+</li>
+<li>
+<p>What is the first pass effect?</p>
+</li>
+<li>
+<p>What are factors that influence metabolism?</p>
+</li>
+<li>
+<p>What routes of elimination are there?</p>
+</li>
+<li>
+<p>A medicine that produces a parasympathetic response is called … because…</p>
+</li>
+<li>
+<p>A medicine that produces a sympathetic response is called … because…</p>
+</li>
+<li>
+<p>What is the difference between Parental and Enteral Routes of Medication?</p>
+</li>
+<li>
+<p>What effect does Shock Has on the Different Route’s Of Medication? Why?</p>
+</li>
+<li>
+<p>How does Surface Area in the GI Tract Affect Absorption?</p>
+</li>
+<li>
+<p>What does <strong>Lipoid</strong> Mean?</p>
+<p>Relating to or resembling Fat.</p>
+</li>
+<li>
+<p>Why do lipid soulble medications absorb more rapidly than non-lipid soluble medicaitons?</p>
+</li>
+<li>
+<p>The PH of Blood Is…</p>
+</li>
+<li>
+<p>The PH of Stomach Acid, COcaCola, Banana’s , Water, Baking Soda, and Ammonia is…</p>
+<ul>
+<li>Stomach Acid: 1.5 (Acid)</li>
+<li>Coca Cola: 2.7 (Acid)</li>
+<li>Banana: 5 (Acid)</li>
+<li>Water: 7 - Neutral</li>
+<li>Blood: 7.5 (Alkaline)</li>
+<li>Baking Soda: 8.4 (Alkaline)</li>
+<li>Ammonia: 12 (Very Alkaline)</li>
+</ul>
+</li>
+<li>
+<p>Where are the Majority of Medications Are Absorbed?</p>
+<p>The Majority of Medications Are absorbed in the Intestines <strong>When Taken from the GI Tract?</strong></p>
+<p>Aspirin is one of the very few medications absorbed in the stomach. The Vast Majority Of Absorption occurs in the intestines.</p>
+</li>
+<li>
+<p>Why are different medications either weak acids or bases, and how does this affect absorption?</p>
+</li>
+<li>
+<p>The Higher the Medication Concentration, the higher the.. Absorption</p>
+</li>
+<li>
+<p>D</p>
+</li>
+</ul>
+<h2 id="further-reading">Further Reading:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#further-reading" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Pharmacokinetics Acronym: LADME</strong></p>
+<p>Liberation: Absorption, Distribution, Metabolism, Excretion.</p>
+<p><a href="https://www.news-medical.net/health/Pharmacokinetics.aspx" class="external">https://www.news-medical.net/health/Pharmacokinetics.aspx<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-2"><a href="#what-is-pharmacology" data-for="what-is-pharmacology">What is Pharmacology?</a></li><li class="depth-1"><a href="#terms-to-learn" data-for="terms-to-learn">Terms To Learn</a></li><li class="depth-1"><a href="#expanding-on-our-terms-above" data-for="expanding-on-our-terms-above">Expanding on our Terms Above</a></li><li class="depth-2"><a href="#multiple-dosing-why" data-for="multiple-dosing-why">Multiple Dosing, Why?</a></li><li class="depth-2"><a href="#maximum-therapeutic-concentration" data-for="maximum-therapeutic-concentration">Maximum Therapeutic Concentration.</a></li><li class="depth-2"><a href="#onset-of-effect" data-for="onset-of-effect">Onset Of Effect</a></li><li class="depth-0"><a href="#pharmacodynamics-vs" data-for="pharmacodynamics-vs">Pharmacodynamics vs</a></li><li class="depth-0"><a href="#pharmacokinetics" data-for="pharmacokinetics">Pharmacokinetics</a></li><li class="depth-2"><a href="#-why-is-pharmacokinetics-important" data-for="-why-is-pharmacokinetics-important">💡 Why is pharmacokinetics important?</a></li><li class="depth-1"><a href="#factors-affecting-pharmacokinetics" data-for="factors-affecting-pharmacokinetics">Factors affecting pharmacokinetics</a></li><li class="depth-1"><a href="#routes-of-administration---parental-vs-enteral" data-for="routes-of-administration---parental-vs-enteral">Routes Of Administration - Parental Vs Enteral</a></li><li class="depth-1"><a href="#parental-routes---bypass-the-gi-tract" data-for="parental-routes---bypass-the-gi-tract">Parental Routes - bypass the GI Tract.</a></li><li class="depth-1"><a href="#enteral-routes---absorption-through-the-gi-tract" data-for="enteral-routes---absorption-through-the-gi-tract">Enteral routes - absorption through the G.I Tract</a></li><li class="depth-1"><a href="#the-life-cycle-of-medicines-in-the-body" data-for="the-life-cycle-of-medicines-in-the-body">The life-cycle of medicines in the body</a></li><li class="depth-2"><a href="#absorption" data-for="absorption">Absorption</a></li><li class="depth-1"><a href="#factors-influencing-bioavailibility" data-for="factors-influencing-bioavailibility">Factors influencing BioAvailibility</a></li><li class="depth-2"><a href="#blood-flow" data-for="blood-flow">Blood Flow</a></li><li class="depth-2"><a href="#surface-area-for-absorption" data-for="surface-area-for-absorption">Surface Area for Absorption</a></li><li class="depth-2"><a href="#lipid-water-solubility" data-for="lipid-water-solubility">Lipid Water Solubility</a></li><li class="depth-2"><a href="#ph-of-medications" data-for="ph-of-medications">PH of Medications</a></li><li class="depth-2"><a href="#summary" data-for="summary">Summary:</a></li><li class="depth-1"><a href="#distribution-of-medication" data-for="distribution-of-medication">Distribution of Medication</a></li><li class="depth-2"><a href="#distribution-of-medication-1" data-for="distribution-of-medication-1">Distribution of Medication</a></li><li class="depth-2"><a href="#a-medications-ability-to-exit-the-circulatory-system" data-for="a-medications-ability-to-exit-the-circulatory-system">A Medications Ability to Exit the circulatory System</a></li><li class="depth-2"><a href="#ability-of-medicine-to-enter-the-cells" data-for="ability-of-medicine-to-enter-the-cells">Ability of Medicine to enter the Cells</a></li><li class="depth-2"><a href="#passing-the-blood-brain-barrier" data-for="passing-the-blood-brain-barrier">Passing The Blood Brain Barrier..</a></li><li class="depth-1"><a href="#metabolism" data-for="metabolism">Metabolism</a></li><li class="depth-2"><a href="#first-pass-effect" data-for="first-pass-effect">First Pass Effect</a></li><li class="depth-1"><a href="#factors-influencing-metabolism" data-for="factors-influencing-metabolism">Factors Influencing Metabolism</a></li><li class="depth-2"><a href="#age" data-for="age">Age</a></li><li class="depth-2"><a href="#nutrition" data-for="nutrition">Nutrition</a></li><li class="depth-2"><a href="#competition-between-medications" data-for="competition-between-medications">Competition between Medications</a></li><li class="depth-2"><a href="#elimination" data-for="elimination">Elimination</a></li><li class="depth-2"><a href="#disease-processes" data-for="disease-processes">Disease processes</a></li><li class="depth-0"><a href="#medicine-classifications" data-for="medicine-classifications">Medicine Classifications</a></li><li class="depth-2"><a href="#ace-inhibitors" data-for="ace-inhibitors">ACE Inhibitors</a></li><li class="depth-2"><a href="#alpha-and-beta---adrenergic-antagonists" data-for="alpha-and-beta---adrenergic-antagonists">Alpha And Beta - adrenergic antagonists</a></li><li class="depth-2"><a href="#analagesics-include-nsaids-and-opoids" data-for="analagesics-include-nsaids-and-opoids">Analagesics Include NSAIDS And Opoids…</a></li><li class="depth-2"><a href="#nsaids--non-steroidal-anti-inflammatory-drugs" data-for="nsaids--non-steroidal-anti-inflammatory-drugs">NSAIDS ( Non-steroidal anti-inflammatory Drugs)</a></li><li class="depth-2"><a href="#opoids" data-for="opoids">Opoids</a></li><li class="depth-2"><a href="#angiotensin-2-blockers" data-for="angiotensin-2-blockers">AngioTensin 2 Blockers</a></li><li class="depth-2"><a href="#antibiotics" data-for="antibiotics">Antibiotics</a></li><li class="depth-2"><a href="#penicillin-based" data-for="penicillin-based">Penicillin Based</a></li><li class="depth-2"><a href="#cephalosporions" data-for="cephalosporions">Cephalosporions</a></li><li class="depth-2"><a href="#anti-coagulants" data-for="anti-coagulants">Anti-coagulants</a></li><li class="depth-2"><a href="#antiemetics" data-for="antiemetics">Antiemetics</a></li><li class="depth-2"><a href="#antihistamines" data-for="antihistamines">Antihistamines</a></li><li class="depth-2"><a href="#antiplatelets" data-for="antiplatelets">Antiplatelets</a></li><li class="depth-2"><a href="#beta-blockers" data-for="beta-blockers">Beta Blockers</a></li><li class="depth-2"><a href="#bronchodilators" data-for="bronchodilators">Bronchodilators.</a></li><li class="depth-2"><a href="#calcium-channel-blockers" data-for="calcium-channel-blockers">Calcium Channel Blockers</a></li><li class="depth-2"><a href="#corticosteroids" data-for="corticosteroids">Corticosteroids</a></li><li class="depth-2"><a href="#diuretics" data-for="diuretics">Diuretics</a></li><li class="depth-2"><a href="#oral-hypoglycaemics" data-for="oral-hypoglycaemics">Oral Hypoglycaemics</a></li><li class="depth-2"><a href="#vasodilators" data-for="vasodilators">Vasodilators</a></li><li class="depth-1"><a href="#review-questions" data-for="review-questions">Review Questions</a></li><li class="depth-2"><a href="#recap-questions" data-for="recap-questions">Recap Questions</a></li><li class="depth-2"><a href="#questions-about-pharmacology" data-for="questions-about-pharmacology">Questions about Pharmacology</a></li><li class="depth-1"><a href="#further-reading" data-for="further-reading">Further Reading:</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../Module-2" class="internal">Module 2</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.0</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
